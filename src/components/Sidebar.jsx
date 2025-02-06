@@ -6,7 +6,7 @@ export default function Sidebar() {
   return (
     <aside className={`hidden w-64 p-6 lg:block text-gray-700 font-medium`}>
       <div className="mb-8 flex items-center">
-        <div className="flex items-center justify-center rounded-full text-xl font-bold">
+        <div className="flex items-center justify-center rounded-full text-2xl font-bold">
          <p><span className="text-red-500">Xen</span><span className="text-yellow-500">tro</span></p>
         </div>
       </div>

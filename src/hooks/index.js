@@ -1,4 +1,4 @@
-import useUsers from "./useUsers";
+import useApi from "./useApi";
 
 
-export {useUsers}
+export {useApi}

@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ErrorPage from './Error.jsx'
 import Users from './components/Users.jsx'
+import Products from './components/Products.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'products',
-        element: <div>products</div>
+        element: <Products />
       }
     ]
   }

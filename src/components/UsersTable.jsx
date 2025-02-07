@@ -1,5 +1,5 @@
 import DetailsIcon from "../assets/detailsIcon";
-
+//I didn't use this table cause it's not reuseable 
 export default function BasicTable({ users, onSmash }) {
   return (
     <div className="overflow-x-auto p-2">

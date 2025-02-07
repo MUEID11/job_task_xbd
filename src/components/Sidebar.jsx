@@ -1,22 +1,23 @@
+
 import { Link } from "react-router-dom";
 
 
 export default function Sidebar() {
-  
   return (
     <aside className={`hidden w-64 p-6 lg:block text-gray-700 font-medium`}>
       <div className="mb-8 flex items-center">
         <div className="flex items-center justify-center rounded-full text-2xl font-bold">
-         <p><span className="text-red-500">Xen</span><span className="text-yellow-500">tro</span></p>
+          <p>
+            <span className="text-red-500">Xen</span>
+            <span className="text-yellow-500">tro</span>
+          </p>
         </div>
       </div>
-      <button className="mb-8 w-full rounded-md bg-yellow-500 py-2 text-white">
-        + New Product
-      </button>
+
       <nav>
         <ul className="space-y-4">
           <li>
-            <Link to={'/users'} className="flex items-center">
+            <Link to={"/dashboard/users"} className="flex items-center">
               <svg
                 className="mr-3 h-5 w-5"
                 fill="none"
@@ -35,7 +36,7 @@ export default function Sidebar() {
             </Link>
           </li>
           <li>
-            <Link to={'/products'} className="flex items-center">
+            <Link to={"/dashboard/products"} className="flex items-center">
               <svg
                 className="mr-3 h-5 w-5"
                 fill="none"
@@ -54,7 +55,7 @@ export default function Sidebar() {
             </Link>
           </li>
           <li>
-            <Link to={'/settings'} className="flex items-center">
+            <Link to={"/settings"} className="flex items-center">
               <svg
                 className="mr-3 h-5 w-5"
                 fill="none"

@@ -1,6 +1,6 @@
 const ReusableTable = ({ data, columns }) => {
   return (
-    <table className="w-full table-auto border-collapse">
+    <table className="w-full table-auto border-collapse overflow-x-auto">
       <thead>
         <tr>
           {columns.map((col) => (

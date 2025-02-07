@@ -1,17 +1,16 @@
 import { useState } from "react";
 
 const ProductModal = ({ onClose, open, onSubmit }) => {
-  
   const [productData, setProductData] = useState({
-    id: "", 
+    id: "",
     name: "",
     data: {
       color: "",
       capacity: "",
     },
   });
-  const [loading, setLoading] = useState(false); 
-  const [error, setError] = useState(null); 
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
   if (!open) return null;
 
   const handleInputChange = (e) => {
@@ -53,12 +52,13 @@ const ProductModal = ({ onClose, open, onSubmit }) => {
 
       // Handle success
       const data = await response.json();
-      onSubmit(data); // Pass the created product back to the parent
+      alert("Data added successfully");
+      onSubmit(data); // Pass the created product back to the parent to show the data on UI
       onClose(); // Close modal after submitting
     } catch (err) {
-      setError(err.message); // Set error message
+      setError(err.message);
     } finally {
-      setLoading(false); // Stop loading
+      setLoading(false);
     }
   };
 

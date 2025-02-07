@@ -45,7 +45,7 @@ const Users = () => {
     },
   ];
   return (
-    <div className="m-2 p-4 space-y-4">
+    <div className="m-2 p-4 space-y-4 ">
       <h1 className="text-3xl font-semibold mb-4">Welcome to the User Page</h1>
       <div className="text-xl font-bold">
         View users data:

@@ -81,10 +81,11 @@ const Products = () => {
 
   const handleInputChange = (e) => {
     const value = e.target.value;
-    setSearchTerm(value); // Immediate UI update
-    debouncedFilter(value); // Debounced filtering
+    setSearchTerm(value);
+    debouncedFilter(value);
   };
-  //dynamic columns for data loading though it makes the code hard to read
+
+  //dynamic columns for data loading though it makes the code hard to read I just tried it out
 
   const productColumn = [
     { key: "name", header: "Name" },
@@ -113,7 +114,9 @@ const Products = () => {
   ];
   return (
     <div>
-      <h1 className="text-3xl font-semibold mb-4">Welcome to the Products Page</h1>
+      <h1 className="text-3xl font-semibold mb-4">
+        Welcome to the Products Page
+      </h1>
       <button
         onClick={() => setShowModal(true)}
         className="mb-8 w-36 rounded-md bg-yellow-500 py-2 text-white cursor-pointer"
@@ -126,18 +129,18 @@ const Products = () => {
         open={showModal}
         onSubmit={handleAddProduct}
       />
-      <div className="flex justify-between items-center mr-12">
-        <div className="flex items-center rounded-lg">
-          <label className="font-semibold mr-4">Search Products:</label>
+      <div className="flex justify-around sm:justify-between items-center sm:mr-12 w-full space-x-4">
+        <div className="flex items-center rounded-lg sm:text-sm lg:font-semibold p-1">
+          <label className="mr-4">Search Products:</label>
           <input
             type="text"
             placeholder="Search product"
             onChange={handleInputChange}
-            className="w-60 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-32 sm:w-60 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
         </div>
-        <div>
-          <label className="font-semibold mr-4">Sort Products:</label>
+        <div className="text-sm lg:font-semibold p-1">
+          <label className=" mr-4">Sort Products:</label>
           <select name="Sort by name" id="sorter" onChange={handleSort}>
             <option value="asc">Ascending</option>
             <option value="desc">Descending</option>

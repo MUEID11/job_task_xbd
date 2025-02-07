@@ -1,9 +1,7 @@
-
-export default function Header() {
-
+export default function Header({ onToggleSidebar }) {
   return (
     <header className={`flex items-center justify-between p-4 text-gray-700`}>
-      <button  className="lg:hidden">
+      <button onClick={onToggleSidebar} className="lg:hidden">
         <svg
           className="h-6 w-6"
           fill="none"
@@ -19,7 +17,7 @@ export default function Header() {
           ></path>
         </svg>
       </button>
-      
+
       <div className="flex items-end justify-end w-full">
         <button className="relative mr-4">
           <svg

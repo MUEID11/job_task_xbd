@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 import Loader from "./Loader";
-// import BasicTable from "./UsersTable";
-import Modal from "./modal";
+
+import Modal from './Modal'
 import { useApi } from "../hooks";
 import { USERS_API_URL } from "../assets/config";
 import ReusableTable from "./ReuseableTable";
@@ -58,11 +58,10 @@ const Users = () => {
         // actions={handleOnClickUsers}
       />
       {/* Modal */}
-      <Modal
-        open={showModal}
-        onClose={() => setShowModal(false)}
-        user={selectedUser}
-      />
+      <Modal 
+      open={showModal}
+      onClose={() => setShowModal(false)}
+      user={selectedUser}/>
     </div>
   );
 };

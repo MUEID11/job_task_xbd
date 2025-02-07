@@ -29,8 +29,10 @@ This project is a responsive **Admin Dashboard** built using **React** and style
 1. Clone the repository:
    ```bash
    git clone https://github.com/MUEID11/job_task_xbd.git
-   cd admin-dashboard
+   cd colned folder
    npm install
    npm run dev
 - Open your browser and go to http://localhost:5173 to view the application.
+
+## Project outline
 ![Dashboard Sketch](public/Untitled-2024-11-26-1228.png)

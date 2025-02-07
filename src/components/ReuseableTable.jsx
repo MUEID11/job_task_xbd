@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const ReusableTable = ({ data, columns }) => {
   return (
     <div className="w-full overflow-x-auto">

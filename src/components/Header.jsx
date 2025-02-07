@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 export default function Header({ onToggleSidebar }) {
   return (
     <header className={`flex items-center justify-between p-4 text-gray-700`}>

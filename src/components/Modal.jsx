@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const Modal = ({ user, onClose, open }) => {
   if (!open || !user) return null;
 

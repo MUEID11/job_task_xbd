@@ -33,7 +33,7 @@ const useApi = (apiUrl) => {
   };
   useEffect(() => {
     fetchUserData();
-  }, [apiUrl]);
+  }, [apiUrl]);//no need to add function it will cause infinite rerender
 
   return { data, error, loading };
 };

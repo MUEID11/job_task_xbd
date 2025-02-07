@@ -83,6 +83,7 @@ const Products = () => {
     const value = e.target.value;
     setSearchTerm(value);
     debouncedFilter(value);
+    console.log(searchTerm)
   };
 
   //dynamic columns for data loading though it makes the code hard to read I just tried it out

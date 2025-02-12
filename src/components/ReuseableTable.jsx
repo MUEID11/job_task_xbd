@@ -25,7 +25,7 @@ const ReusableTable = ({ data, columns }) => {
               ))}
             </tr>
           ))}
-        </tbody>
+        </tbody> 
       </table>
     </div>
   );

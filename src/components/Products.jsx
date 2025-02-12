@@ -62,10 +62,13 @@ const Products = () => {
 
       // deletion is unsuccessful, because the api doesn't allow the "DELETE METHOD"
       //locally data fetched and deletion applied
-      setLocalProducts((prevProducts) =>
-        prevProducts.filter((product) => product.id !== item.id)
-      );
-
+      if (confirm(`are you sure you want to delete?`)) {
+        setLocalProducts((prevProducts) =>
+          prevProducts.filter((product) => product.id !== item.id)
+        );
+      } else {
+        console.log("Cancel delete");
+      }
       alert("Product deleted successfully");
     } catch (error) {
       console.error("Error deleting product:", error);
@@ -83,7 +86,7 @@ const Products = () => {
     const value = e.target.value;
     setSearchTerm(value);
     debouncedFilter(value);
-    console.log(searchTerm)
+    console.log(searchTerm);
   };
 
   //dynamic columns for data loading though it makes the code hard to read I just tried it out
